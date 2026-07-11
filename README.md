@@ -49,3 +49,25 @@ cd portfolio-optimization
 Install the required Python packages:
 
 pip install pandas numpy matplotlib seaborn yfinance scikit-learn statsmodels pmdarima tensorflow
+
+Task 3: Forecast Future Market Trends
+Recursive Multi-Step Projections: Deployed the trained LSTM model to project Tesla's stock performance 6 to 12 months into the future via an iterative sliding-window prediction loop.
+
+Uncertainty Quantification: Mapped out probabilistic confidence intervals using inference-phase variance tracking to evaluate long-term forecast reliability.
+
+Opportunity & Risk Assessment: Translated widening uncertainty bounds into tactical market windows, outlining high-alpha entry thresholds and potential downside volatility risks.
+
+Task 4: Optimize Portfolio Based on Forecast
+Expected Returns & Covariance: Integrated 12-month forward return forecasts for TSLA with long-term historical annualized means for BND and SPY, supported by a daily return covariance matrix.
+
+Efficient Frontier Simulation: Performed quadratic programming simulations via PyPortfolioOpt across 10,000 randomized weight portfolios.
+
+Strategic Allocation: Identified and marked the Maximum Sharpe Ratio (Tangency) Portfolio and Minimum Volatility Portfolio to deliver recommended client asset weights.
+
+
+Task 5: Strategy Backtesting
+Out-of-Sample Window: Simulated portfolio performance over a strict 1-year historical window (January 2025–January 2026) using completely unseen market data.
+
+Benchmark Comparison: Validated strategy performance against a passive, balanced benchmark consisting of 60% SPY and 40% BND.
+
+Performance Analysis: Evaluated cumulative returns, annualized Sharpe Ratios, and maximum drawdown metrics to verify real-world strategy viability

@@ -1,0 +1,28 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual Environments (if you create one later)
+venv/
+env/
+.venv/
+
+# Environment variables / Secrets
+.env
+
+# Data folders 
+# (We ignore these so we don't upload massive CSVs to GitHub. 
+# Anyone cloning the repo will just re-run your notebook to fetch the data).
+data/raw/
+data/processed/
+data/Backtesting
+*.csv
+*.xlsx
+
+# OS generated files
+.DS_Store
+Thumbs.db
