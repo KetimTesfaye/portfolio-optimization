@@ -19,6 +19,7 @@ env/
 # Anyone cloning the repo will just re-run your notebook to fetch the data).
 data/raw/
 data/processed/
+data/Backtesting
 *.csv
 *.xlsx
 
